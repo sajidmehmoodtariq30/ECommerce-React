@@ -82,7 +82,7 @@ const Navbar = () => {
             {/* Sidebar Menue For Small Screen */}
             <div className={`absolute top-0 bottom-0 left-0 overflow-hidden bg-white dark:bg-gray-800 text-black dark:text-white transition-all z-40 ${visible ? 'w-full' : 'w-0'}`}>
                 <button onClick={() => setVisible(false)} className="absolute top-5 right-10 text-2xl">X</button>
-                <ul className="flex flex-col gap-4 p-5">
+                <ul className="flex flex-col gap-4 p-10">
                     {MenuLinks.map((data, index) => (
                         <li key={index}>
                             <NavLink
@@ -92,6 +92,7 @@ const Navbar = () => {
                             >
                                 {data.name}
                             </NavLink>
+                            <hr className='bg-gray-600 dark:bg-white my-2' />
                         </li>
                     ))}
                 </ul>

@@ -28,6 +28,43 @@ const MenuLinks = [
         link: "/contact",
     },
 ]
+const SmallMenuLinks = [
+    {
+        id: 1,
+        name: "Home",
+        link: "/",
+    },
+    {
+        id: 2,
+        name: "Collections",
+        link: "/collection",
+    },
+    {
+        id: 3,
+        name: "About",
+        link: "/about",
+    },
+    {
+        id: 4,
+        name: "Contact",
+        link: "/contact",
+    },
+    {
+        id: 5,
+        name: "My Profile",
+        link: "/profile",
+    },
+    {
+        id: 6,
+        name: "Orders",
+        link: "/order",
+    },
+    {
+        id: 6,
+        name: "Logout",
+        link: "/logout",
+    },
+]
 
 const Navbar = () => {
     const [visible, setVisible] = useState(false);
@@ -59,7 +96,7 @@ const Navbar = () => {
             <div className="flex items-center gap-4">
                 <IoMdSearch className='text-xl text-gray-600 dark:text-gray-400 duration-200' />
                 <div className="group relative">
-                    <FaUser className='text-gray-500 hover:text-black flex dark:hover:text-white duration-200' />
+                    <FaUser className='text-gray-500 hover:text-black dark:hover:text-white duration-200 flex sm-hidden' />
                     <div className="group-hover:block hidden absolute dropdown-menue right-0 py-4 bg-white dark:bg-gray-900 text-gray-500 dark:text-white shadow-md duration-200">
                         <div className="flex flex-col gap-2 w-36 py-3 px-5 ">
                             <p className='cursor-pointer hover:bg-primary/20 h-6 text-center dark:hover:bg-gray-800 duration-200 rounded-md font-semibold'>My Profile</p>
@@ -83,7 +120,7 @@ const Navbar = () => {
             <div className={`absolute top-0 bottom-0 left-0 overflow-hidden bg-white dark:bg-gray-800 text-black dark:text-white transition-all z-40 ${visible ? 'w-full' : 'w-0'}`}>
                 <button onClick={() => setVisible(false)} className="absolute top-5 right-10 text-2xl">X</button>
                 <ul className="flex flex-col gap-4 p-10">
-                    {MenuLinks.map((data, index) => (
+                    {SmallMenuLinks.map((data, index) => (
                         <li key={index}>
                             <NavLink
                                 to={data.link}

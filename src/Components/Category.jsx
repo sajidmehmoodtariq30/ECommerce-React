@@ -32,7 +32,7 @@ const categories = [
             bgColor: 'bg-white',
             textColor: 'text-brandYellow',
         },
-        imageStyles: 'w-[320px] absolute -right-12 top-2 lg:top-[40px]',
+        imageStyles: 'w-[320px] absolute -right-4 top-2 lg:top-[40px]',
     },
     {
         title: 'Laptop',
@@ -73,7 +73,7 @@ const categories = [
             bgColor: 'bg-white',
             textColor: 'text-brandGreen',
         },
-        imageStyles: 'w-[200px] md:w-[320px] absolute right-0',
+        imageStyles: 'w-[320px] absolute -right-4 top-2 lg:top-[40px]',
     },
     {
         title: 'VR',
@@ -86,7 +86,7 @@ const categories = [
             bgColor: 'bg-white',
             textColor: 'text-brandGreen',
         },
-        imageStyles: 'w-[200px] md:w-[320px] absolute -right-4 lg:top-[40px]',
+        imageStyles: 'w-[320px] absolute bottom-0 right-0',
     },
 ];
 
@@ -99,7 +99,7 @@ const Category = () => {
                     {categories.map((category, index) => (
                         <div
                             key={index}
-                            className={`py-10 pl-5 bg-gradient-to-br ${category.bgGradient} ${category.textColor} rounded-3xl relative h-[280px] flex items-end ${category.colSpan || ''}`}
+                            className={`py-10 pl-5 bg-gradient-to-br ${category.bgGradient} ${category.textColor} rounded-3xl relative h-[320px] flex items-end ${category.colSpan || ''}`}
                         >
                             <div>
                                 <div className='mb-4'>

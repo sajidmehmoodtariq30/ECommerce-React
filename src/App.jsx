@@ -10,7 +10,7 @@ import Login from './Pages/Login'
 import Order from './Pages/Order'
 import PlaceOrder from './Pages/PlaceOrder'
 import Error from './Pages/Error'
-import Navbar from './components/Navbar'
+import Navbar from './Components/Navbar'
 
 const App = () => {
   return (

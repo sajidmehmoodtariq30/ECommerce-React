@@ -14,7 +14,7 @@ import Navbar from './components/Navbar'
 
 const App = () => {
   return (
-    <div className=' sm:px-[2vw] md:px[5vw] lg:px-[7vw]'>
+    <div className=' sm:px-[2vw] md:px[5vw] lg:px-[7vw] bg-gray-200 dark:bg-gray-900/90'>
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home />} />

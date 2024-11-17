@@ -69,7 +69,7 @@ const SmallMenuLinks = [
 const Navbar = () => {
     const [visible, setVisible] = useState(false);
     return (
-        <div className='bg-white dark:bg-gray-900 dark:text-white duration-200 flex items-center justify-between px-5 sm:py-5 font-medium'>
+        <div className='navbar-bg-color dark:text-white duration-200 flex items-center justify-between px-5 sm:py-5 font-medium'>
             {/* logo */}
             <NavLink to="/"
                 className='text-primary font-semibold tracking-widest text-2xl uppercase sm:mx-4 mx-0 sm:text-3xl'

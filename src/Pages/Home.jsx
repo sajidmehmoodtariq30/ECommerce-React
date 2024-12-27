@@ -18,6 +18,9 @@ const BannerData = {
   bgColor: "#f42c37"
 }
 
+
+
+
 const Home = () => {
   return (
     <div>

@@ -3,6 +3,8 @@ import Hero from '../Components/Hero'
 import Category from '../Components/Category'
 import Services from '../Components/Services'
 import Banner from '../Components/Banner'
+import BestProducts from '../Components/bestProduct/BestProducts'
+
 import headphone from '../assets/hero/headphone.png'
 
 const BannerData = {
@@ -23,6 +25,7 @@ const Home = () => {
       <Category />
       <Services />
       <Banner data = {BannerData}/>
+      <BestProducts />
     </div>
   )
 }

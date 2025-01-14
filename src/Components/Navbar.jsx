@@ -5,66 +5,9 @@ import { IoMdSearch } from 'react-icons/io';
 import { FaUser } from "react-icons/fa";
 import { CgMenu } from 'react-icons/cg';
 import DarkMode from './DarkMode';
+import { MenuLinks } from '../../Api/Data';
+import { SmallMenuLinks } from '../../Api/Data';
 
-const MenuLinks = [
-    {
-        id: 1,
-        name: "Home",
-        link: "/",
-    },
-    {
-        id: 2,
-        name: "Collections",
-        link: "/collection",
-    },
-    {
-        id: 3,
-        name: "About",
-        link: "/about",
-    },
-    {
-        id: 4,
-        name: "Contact",
-        link: "/contact",
-    },
-]
-const SmallMenuLinks = [
-    {
-        id: 1,
-        name: "Home",
-        link: "/",
-    },
-    {
-        id: 2,
-        name: "Collections",
-        link: "/collection",
-    },
-    {
-        id: 3,
-        name: "About",
-        link: "/about",
-    },
-    {
-        id: 4,
-        name: "Contact",
-        link: "/contact",
-    },
-    {
-        id: 5,
-        name: "My Profile",
-        link: "/profile",
-    },
-    {
-        id: 6,
-        name: "Orders",
-        link: "/order",
-    },
-    {
-        id: 6,
-        name: "Logout",
-        link: "/logout",
-    },
-]
 
 const Navbar = () => {
     const [visible, setVisible] = useState(false);

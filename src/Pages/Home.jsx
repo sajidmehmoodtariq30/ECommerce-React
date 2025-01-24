@@ -9,6 +9,9 @@ import headphone from '../assets/hero/headphone.png'
 
 import { BannerData } from '../../Api/Data'
 
+
+
+
 const Home = () => {
   return (
     <div>

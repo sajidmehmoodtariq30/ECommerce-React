@@ -11,11 +11,24 @@ import Order from './Pages/Order'
 import PlaceOrder from './Pages/PlaceOrder'
 import Error from './Pages/Error'
 import Navbar from './Components/Navbar'
+import Footer from './Components/Footer'
+
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const App = () => {
+  React.useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      easing: 'ease-in-sine',
+      delay: 100,
+    })
+    AOS.refresh()
+  },[])
+
   return (
     <div className=' sm:px-[2vw] md:px[5vw] lg:px-[7vw] bg-gray-200 dark:bg-gray-900/90'>
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/collection' element={<Collection />} />
@@ -28,6 +41,7 @@ const App = () => {
         <Route path='/place-order' element={<PlaceOrder />} />
         <Route path='*' element={<Error />} />
       </Routes>
+      <Footer />
     </div>
   )
 }
